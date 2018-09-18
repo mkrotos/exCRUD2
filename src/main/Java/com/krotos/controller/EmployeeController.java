@@ -1,5 +1,6 @@
-package com.krotos;
+package com.krotos.controller;
 
+import com.krotos.model.Employee;
 import com.krotos.service.EmployeeService;
 import org.jboss.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

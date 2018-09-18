@@ -1,6 +1,6 @@
 package com.krotos.dao;
 
-import com.krotos.Employee;
+import com.krotos.model.Employee;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -22,7 +22,7 @@ public class EmployeeDaoImpl implements EmployeeDAO {
     @Override
     public List<Employee> getAllEmployees() {
         return sessionFactory.getCurrentSession()
-                .createQuery("from com.krotos.Employee")
+                .createQuery("from com.krotos.model.Employee")
                 .list();
     }
 

@@ -1,4 +1,4 @@
-package com.krotos;
+package com.krotos.model;
 
 import javax.persistence.*;
 import java.io.Serializable;

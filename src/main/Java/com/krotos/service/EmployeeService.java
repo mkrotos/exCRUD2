@@ -1,6 +1,6 @@
 package com.krotos.service;
 
-import com.krotos.Employee;
+import com.krotos.model.Employee;
 
 import java.util.List;
 

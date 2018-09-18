@@ -1,6 +1,6 @@
 package com.krotos.service;
 
-import com.krotos.Employee;
+import com.krotos.model.Employee;
 import com.krotos.dao.EmployeeDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
