@@ -17,9 +17,30 @@
 <div align="center">
     <h1>Employee List</h1>
     <h3>
-        <a href="/newEmployee">New Employee</a>
+        <a href="<c:url value="/newEmployee"/>">New Employee</a>
     </h3>
+    <table border="1">
 
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Action</th>
+
+        <c:forEach var="employee" items="${employeeList}">
+            <tr>
+                <td>${employee.name}</td>
+                <td>${employee.email}</td>
+                <td>${employee.adress}</td>
+                <td>${employee.telephone}</td>
+
+                <td><a href="<c:url value="/editEmployee?id=${employee.id}"/>">Edit</a>
+                <a href="<c:url value="/deleteEmployee?id=${employee.id}"/>">Delete</a>
+                </td>
+
+            </tr>
+        </c:forEach>
+    </table>
 </div>
 </body>
 </html>
