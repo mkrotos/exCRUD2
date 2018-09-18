@@ -1,3 +1,7 @@
+package com.krotos.dao;
+
+import com.krotos.Employee;
+
 import java.util.List;
 
 public interface EmployeeDAO {
