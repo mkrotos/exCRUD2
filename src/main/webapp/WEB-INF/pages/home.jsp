@@ -23,11 +23,11 @@
     </h3>
     <table border="1">
 
-        <th>Name</th>
-        <th>Email</th>
-        <th>Address</th>
-        <th>Phone</th>
-        <th>Action</th>
+        <th width="120">Name</th>
+        <th width="150">Email</th>
+        <th width="150">Address</th>
+        <th width="100">Phone</th>
+        <th width="75">Action</th>
 
         <c:forEach var="employee" items="${employeeList}">
             <tr>
@@ -37,7 +37,7 @@
                 <td>${employee.telephone}</td>
 
                 <td><a href="<c:url value="/editEmployee?id=${employee.id}"/>">Edit</a>
-                <a href="<c:url value="/deleteEmployee?id=${employee.id}"/>">Delete</a>
+                    <a href="<c:url value="/deleteEmployee?id=${employee.id}"/>">Delete</a>
                 </td>
 
             </tr>
